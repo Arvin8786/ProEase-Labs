@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Generates PWA icons and the 1200x630 social preview image. Re-run after changing brand text/colours."""
+"""Generates the 1200x630 social preview image. Re-run after changing brand text/colours."""
 import os
 from PIL import Image, ImageDraw, ImageFont
 ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
@@ -32,9 +32,6 @@ def rounded(im, r):
     ImageDraw.Draw(m).rounded_rectangle([0, 0, im.size[0]-1, im.size[1]-1], r, fill=255)
     out = Image.new("RGBA", im.size, (0,0,0,0)); out.paste(im, (0,0), m); return out
 
-for sz in (192, 512):
-    rounded(icon(sz), int(sz * 0.22)).save(os.path.join(OUT, f"icon-{sz}.png"))
-icon(512, pad=0.12).convert("RGB").save(os.path.join(OUT, "icon-maskable-512.png"))  # full-bleed for maskable
 
 # --- OG image ---
 W, H = 1200, 630

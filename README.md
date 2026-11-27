@@ -1,6 +1,6 @@
 # ProEase Labs — Unified Parent Portal
 
-Static, build-free commercial gateway (HTML + CSS + vanilla JS) driven by a Google Sheet.
+Static, build-free commercial showcase site (HTML + CSS + vanilla JS) driven by a Google Sheet.
 Contains **no product code**; it only renders public commercial content.
 
 ## Go live in 4 steps
@@ -19,7 +19,7 @@ Replace the placeholder contact details (`whatsapp_number`, `contact_email`, soc
 - `tools/build_seed.py` regenerates the CSVs, `Seed.gs` and `fallback.json` if you want to change the sample content in code.
 
 ## Moving to Render (private repo)
-Create a Render **Static Site**, publish directory `.`, no build command. All paths are relative, so nothing breaks. Only edit the 4 `CHANGE-ON-MIGRATION` URLs in `index.html` (social preview tags must be absolute). Bump `VERSION` in `sw.js` when you ship big changes.
+Create a Render **Static Site**, publish directory `.`, no build command. All paths are relative, so nothing breaks. Only edit the 4 `CHANGE-ON-MIGRATION` URLs in `index.html` (social preview tags must be absolute). 
 
 ## Notes
 - Social previews are read from `index.html` only (crawlers ignore `#/` routes), so every shared link shows the brand card.

@@ -101,8 +101,19 @@
     main.innerHTML = '<div class="page">' + html + footerHtml() + '</div>';
     renderSidebar();
     bindPage(r);
+    reveal();
     if (!keepScroll) { window.scrollTo(0, 0); main.focus({ preventScroll: true }); }
     current = r;
+  }
+
+  /** Gentle fade-up for sections as they scroll into view. */
+  function reveal() {
+    var els = U.$$('.section, .stats, .pcard, .tier, .ben, .sec-item, .dna-item, .steps li', main);
+    if (!('IntersectionObserver' in window) || (window.matchMedia && matchMedia('(prefers-reduced-motion: reduce)').matches)) return;
+    var io = new IntersectionObserver(function (es) {
+      es.forEach(function (e) { if (e.isIntersecting) { e.target.classList.add('in'); io.unobserve(e.target); } });
+    }, { rootMargin: '0px 0px -6% 0px', threshold: 0.05 });
+    els.forEach(function (el) { el.classList.add('rv'); io.observe(el); });
   }
 
   function bindPage(r) {
@@ -157,11 +168,6 @@
       document.body.classList.remove('loading');
     });
 
-    if ('serviceWorker' in navigator && /^https?:$/.test(location.protocol)) {
-      window.addEventListener('load', function () {
-        navigator.serviceWorker.register('./sw.js').catch(function () {});
-      });
-    }
   }
 
   if (document.readyState === 'loading') document.addEventListener('DOMContentLoaded', boot); else boot();
