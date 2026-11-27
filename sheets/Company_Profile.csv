@@ -1,0 +1,43 @@
+Key,Value,Notes
+brand_name,ProEase Labs,"Shown in sidebar, footer and page titles"
+brand_tagline,Operational software for SMEs,Small line under the brand name
+logo_url,,Optional image URL. Leave blank to use the built-in ProEase mark
+hero_eyebrow,Built from real SAP floor experience,Small label above the headline
+hero_headline,Enterprise-grade operational discipline. Priced for SMEs.,
+hero_subheadline,"ProEase Labs turns the procedures big companies run inside SAP — goods receiving, stock issuance, cycle counts, maker-checker approvals and audit trails — into lean software your team can run from day one. No six-month consultants. No per-seat licensing traps.",
+hero_primary_cta,Explore ProEase+,Button that opens the flagship product
+hero_primary_link,#/product/proease-plus,
+hero_secondary_cta,Request a Custom Build,
+hero_secondary_link,#/custom-build,
+hero_trust_line,For SMEs that have outgrown spreadsheets but don't need SAP or Oracle,
+stats,3-in-1 :: ERP + HRM + internal email in one database | 0 :: Per-seat email or user fees on ProEase+ | 2-layer :: Network lock + device lock security | 100% :: Of stock movements and approvals logged,"Value :: Label, separated by |"
+dna_heading,"Real operational DNA, not theory",
+dna_intro,Every workflow in the Business Suite started as a daily procedure run inside an enterprise SAP and warehouse environment — then stripped of the bloat SMEs don't need.,
+dna_points,"Goods Receiving :: PO-matched receipts with quantity and condition checks before stock is booked in | Stock Issuance :: Issue against a request, cost centre or staff member — never off the books | Cycle Counting :: Scheduled counts by bin or category with variance approval before adjustment | Staff Onboarding & Asset Issuance :: Uniforms, devices and tools issued and signed for, then recovered at exit | Attendance & Payroll :: Clock-ins tied to the company network, feeding leave and payroll runs | Maker-Checker Approvals :: The person who keys a transaction is never the one who approves it | Audit Trail :: Every movement stamped with user, time and device ID",Title :: Description
+suite_heading,Core Business Suite,
+suite_intro,"License once, get your own dedicated database, and customise the workflows to how your business actually runs.",
+comparison_heading,Why SMEs choose ProEase over SAP/Oracle and spreadsheets,
+comparison_columns,Spreadsheets | SAP / Oracle | ProEase,"Three column headings, separated by |"
+comparison_rows,"Upfront cost :: Free, but costly mistakes :: Six to seven figures with implementation :: One SME license plus database setup | Time to go live :: Immediate, but no controls :: 6–18 months with consultants :: Weeks, configured to your procedures | Per-user fees :: None :: Per-seat licensing that grows with headcount :: No per-seat fees on internal email | Stock accuracy :: Manual, easy to overwrite :: High, if fully implemented :: PO-matched receiving and approved cycle counts | Approvals & audit trail :: Email threads and screenshots :: Strong but complex :: Maker-checker approvals with an immutable log | Access security :: Anyone with the file :: Enterprise IAM projects :: Company network lock plus approved-device lock | Fit for a 10–200 person team :: Breaks as you grow :: Overbuilt :: Designed for it","Criteria :: Spreadsheets :: SAP/Oracle :: ProEase, rows separated by |"
+apps_heading,Specialised Apps & Prototypes,
+apps_intro,"Focused tools for education, creators and careers — plus prototypes you can see in a guided walkthrough.",
+custom_heading,"Custom software, built on request",
+custom_summary,"Need something the suite doesn't cover? We build bespoke internal tools, workflow automations and custom apps for SMEs — designed by someone who has run the operational process, not just coded it.",
+custom_services,"Internal Operations Tools :: Request, approval and tracking portals that replace email chains and paper forms | Workflow Automation :: Spreadsheet, form and ERP automations that remove repetitive keying and reconciliation | Custom Web & Mobile Apps :: Staff self-service, customer portals and installable PWAs for phones and tablets | Dashboards & Reporting :: Live stock, sales, attendance and KPI views pulled from the systems you already use | Integrations & Data Migration :: Move off spreadsheets cleanly and connect accounting, e-commerce or messaging tools",Title :: Description
+custom_process,"Discovery Call :: We walk through your current process, pain points and budget | Scope & Quote :: A written scope with fixed milestones and a clear price | Build & Review :: Working builds you can test at each milestone, adjusted to feedback | Launch & Support :: Go-live, staff handover and an agreed support period",Step :: Description
+custom_budget_options,"Below RM 5,000 | RM 5,000 – 15,000 | RM 15,000 – 40,000 | Above RM 40,000 | Not sure yet",Options for the budget dropdown
+custom_timeline_options,As soon as possible | Within 1 month | 1–3 months | 3+ months | Just exploring,Options for the timeline dropdown
+contact_email,hello@proeaselabs.com,REPLACE with your real email
+whatsapp_number,60123456789,"REPLACE. Digits only with country code, no + or spaces (e.g. 60123456789)"
+whatsapp_default_message,"Hi ProEase Labs, I'd like to know more about your software for my business.",
+linkedin_url,https://www.linkedin.com/company/proease-labs,"REPLACE with your page, or leave blank to hide"
+instagram_url,https://www.instagram.com/proeaselabs,REPLACE or leave blank
+tiktok_url,https://www.tiktok.com/@proeaselabs,REPLACE or leave blank
+youtube_url,https://www.youtube.com/@proeaselabs,REPLACE or leave blank
+location,"Johor Bahru, Malaysia · Serving Malaysia & Singapore",
+business_hours,"Mon–Sat, 9am–9pm (GMT+8)",
+footer_text,"Practical, procedure-driven software for small and medium businesses.",
+footer_legal,© {year} ProEase Labs. All rights reserved.,{year} is replaced automatically
+form_success_message,"Thank you — your request is in. We'll reply within one business day, usually on WhatsApp.",
+seo_title,"ProEase Labs — SME ERP, HRM & Custom Software",Browser tab title on the home page
+seo_description,"Enterprise-grade operational discipline built for SME budgets. ProEase ERP, HRM and the ProEase+ all-in-one suite, plus custom software on request.",
