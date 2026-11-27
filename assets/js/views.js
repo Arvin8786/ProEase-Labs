@@ -14,7 +14,7 @@
 
   function productIcon(p, big) {
     var url = U.safeUrl(p.Hero_Image_URL);
-    var color = /^#[0-9a-f]{3,8}$/i.test(p.Accent_Color || '') ? p.Accent_Color : '#4f46e5';
+    var color = /^#[0-9a-f]{3,8}$/i.test(p.Accent_Color || '') ? p.Accent_Color : '#0891b2';
     var inner = url && !/^#/.test(url) ?
       '<img src="' + esc(url) + '" alt="" loading="lazy" decoding="async">' : icon(p.Icon || 'box');
     return '<span class="pico' + (big ? ' big' : '') + '" style="--accent:' + color + '">' + inner + '</span>';
@@ -29,7 +29,7 @@
 
   function productCard(p, featured) {
     var pill = (p.Sidebar_Pill && p.Sidebar_Pill !== p.Status) ? '<span class="pill">' + esc(p.Sidebar_Pill) + '</span>' : '';
-    return '<a class="pcard' + (featured ? ' featured' : '') + '" href="#/product/' + esc(p.Slug) + '" style="--accent:' + esc(p.Accent_Color || '#4f46e5') + '">' +
+    return '<a class="pcard' + (featured ? ' featured' : '') + '" href="#/product/' + esc(p.Slug) + '" style="--accent:' + esc(p.Accent_Color || '#0891b2') + '">' +
       '<div class="pcard-top">' + productIcon(p) + '<div class="pcard-badges">' + statusBadge(p.Status) + pill + '</div></div>' +
       '<h3>' + esc(p.Product_Name) + '</h3>' +
       '<p class="pcard-tag">' + esc(p.Tagline) + '</p>' +
@@ -69,7 +69,7 @@
     var flagship = suite.filter(function (p) { return /flagship/i.test(p.Status); })[0] || suite[0];
     var rest = suite.filter(function (p) { return p !== flagship; });
 
-    var h = '<section class="hero">' +
+    var h = '<section class="hero"><img class="hero-art" src="./assets/img/hero-art.jpg" alt="" width="460" height="1000" decoding="async">' +
       '<span class="eyebrow">' + esc(co('hero_eyebrow')) + '</span>' +
       '<h1>' + esc(co('hero_headline')) + '</h1>' +
       '<p class="lead">' + esc(co('hero_subheadline')) + '</p>' +
@@ -164,7 +164,7 @@
     var inquiryDefault = p.Default_Inquiry_Type || Data.categories()[0];
     var waText = 'Hi ProEase Labs, I\'d like to know more about ' + p.Product_Name + '.';
 
-    var h = '<section class="phero" style="--accent:' + esc(p.Accent_Color || '#4f46e5') + '">' +
+    var h = '<section class="phero" style="--accent:' + esc(p.Accent_Color || '#0891b2') + '">' +
       '<nav class="crumbs" aria-label="Breadcrumb"><a href="#/">ProEase Labs</a><span>/</span><span>' + esc(p.Category) + '</span></nav>' +
       '<div class="phero-row">' + productIcon(p, true) + '<div>' +
       '<div class="badges">' + statusBadge(p.Status) + (p.Monetization_Model ? '<span class="badge b-neutral">' + esc(p.Monetization_Model) + '</span>' : '') + '</div>' +
@@ -222,7 +222,7 @@
     var co = Data.co;
     var services = U.pairs(co('custom_services'));
     var steps = U.pairs(co('custom_process'));
-    var h = '<section class="phero" style="--accent:#4f46e5"><nav class="crumbs"><a href="#/">ProEase Labs</a><span>/</span><span>Services</span></nav>' +
+    var h = '<section class="phero" style="--accent:#0891b2"><nav class="crumbs"><a href="#/">ProEase Labs</a><span>/</span><span>Services</span></nav>' +
       '<h1>' + esc(co('custom_heading', 'Custom software, built on request')) + '</h1>' +
       '<p class="lead">' + esc(co('custom_summary')) + '</p>' +
       '<div class="hero-cta"><button type="button" class="btn btn-primary btn-lg" data-scroll="enquire">Request Custom Build' + icon('arrow') + '</button>' +

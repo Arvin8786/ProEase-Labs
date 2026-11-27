@@ -100,7 +100,7 @@ PRODUCTS = [
         Tagline="ERP + HRM + Internal Email in one database",
         Short_Description="The flagship all-in-one suite: operations, inventory, workforce, payroll and built-in internal email — three critical systems for one SME bundle price.",
         Status="Flagship Bundle", Monetization_Model="All-in-One Bundle + DB",
-        Icon="layers", Hero_Image_URL="", Accent_Color="#4f46e5",
+        Icon="layers", Hero_Image_URL="", Accent_Color="#0891b2",
         Value_Highlight="3-in-1 SME Suite: ERP + HRM + Built-in Internal Email — Real Operational Discipline Without SAP/Oracle Costs",
         Overview="ProEase+ combines ProEase ERP, ProEase HRM and a built-in internal email and memo system on one unified database. Goods receipts, purchase requests and leave applications don't get lost in WhatsApp groups or personal inboxes — they route straight to the right manager's @internal inbox for one-click sign-off, and every decision lands in the audit trail.",
         Why_Switch="Most SMEs run stock in one spreadsheet, attendance in another, and approvals over chat. Records drift apart, nobody can say who approved what, and month-end becomes a reconciliation exercise. ProEase+ brings the same receive–issue–count–approve discipline used in enterprise SAP environments, without the licensing bill or the consultants.",

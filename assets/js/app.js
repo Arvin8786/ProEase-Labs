@@ -22,6 +22,11 @@
       (opts.pill ? '<span class="pill">' + esc(opts.pill) + '</span>' : '') + '</a>';
   }
 
+  function brandName(n) {
+    var m = String(n).match(/^(\S+)\s+(.+)$/);
+    return m ? esc(m[1]) + ' <span class="grad-txt">' + esc(m[2]) + '</span>' : esc(n);
+  }
+
   function renderSidebar() {
     var r = parseRoute();
     var link = function (p) {
@@ -40,8 +45,8 @@
     var suite = Data.suite(), apps = Data.apps();
     side.innerHTML =
       '<div class="side-head"><a class="brand" href="#/">' +
-      (logo ? '<img class="brand-img" src="' + esc(logo) + '" alt="">' : '<span class="brand-mark"><img src="./assets/img/icon.svg" alt=""></span>') +
-      '<span class="brand-txt"><strong>' + esc(co('brand_name', 'ProEase Labs')) + '</strong><small>' + esc(co('brand_tagline')) + '</small></span></a>' +
+      (logo ? '<img class="brand-img" src="' + esc(logo) + '" alt="">' : '<span class="brand-mark"><img src="./assets/img/logo-mark.png" alt=""></span>') +
+      '<span class="brand-txt"><strong>' + brandName(co('brand_name', 'ProEase Labs')) + '</strong><small>' + esc(co('brand_tagline')) + '</small></span></a>' +
       '<button type="button" class="icon-btn only-mobile" id="side-close" aria-label="Close menu">' + icon('x') + '</button></div>' +
       '<nav class="side-nav" aria-label="Main">' +
       navLink('#/', 'Studio Home', 'home', { active: r.name === 'home' }) +

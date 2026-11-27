@@ -25,3 +25,6 @@ Create a Render **Static Site**, publish directory `.`, no build command. All pa
 - Social previews are read from `index.html` only (crawlers ignore `#/` routes), so every shared link shows the brand card.
 - Form posts use `text/plain` JSON to avoid CORS preflight. Spam is filtered by a honeypot field and duplicate guard; sheet formula injection is neutralised.
 - The Company Network / Device Lock described on product pages are **marketing copy** for your ERP/HRM; this portal enforces nothing.
+
+## Branding
+Logo and banner artwork live in `assets/img/` (`logo-mark.png`, `logo-full.jpg`, `hero-art.jpg`, `og-image.jpg`, `favicon.png`). Theme colours are the CSS variables at the end of `assets/css/app.css` (navy `--navy-*`, cyan `--cyan`, blue `--blue`).
